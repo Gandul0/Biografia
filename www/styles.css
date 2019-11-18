@@ -1,0 +1,65 @@
+.about {
+  text-align: center;
+  color: black;
+  font-family: verdana;
+  font-size: 30px;
+}
+
+.first_about {
+    color: black;
+    text-align: center;
+    font-family: verdana;
+    font-size: 25px;
+  }
+
+  .second_about {
+    color: black;
+    text-align: center;
+    font-family: verdana;
+    font-size: 20px;
+  }
+
+  .titulos {
+    text-align: center;
+    color: black;
+    font-family: verdana;
+    font-size: 30px;
+  }
+
+  .informacao {
+    color: black;
+    text-align: left;
+    font-family: verdana;
+    font-size: 20px;
+    margin: 20px;
+  }
+
+  .botoes {
+    color: black;
+    text-align: right;
+    font-family: verdana;
+    font-size: 20px;
+  }
+
+  .bar {
+    width: 100%;
+    height: 8px;
+    background-color: rgb(85, 10, 10);
+    border-radius: 50%;
+  }
+
+  .fim {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(117, 117, 117, 0.568);
+  }
+
+  .imagens {
+    position:absolute;
+    top:195.5%;
+    left:50%;
+  }
+
+
+
+
