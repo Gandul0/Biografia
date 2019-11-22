@@ -14,7 +14,7 @@
             padding: 8px;
         }
 
-        ul {
+        #menu {
             list-style-type: none;
             margin: 0;
             padding: 0;
@@ -22,11 +22,11 @@
             background-color: #333;
         }
 
-        li {
+        #menu li {
             float: left;
         }
 
-        li a {
+        #menu a {
             display: block;
             color: white;
             text-align: center;
@@ -34,8 +34,17 @@
             text-decoration: none;
         }
 
-        li a:hover {
-            background-color: #111;
+        #menu a:hover {
+            background-color: rgba(17, 17, 17, 0.247);
+        }
+
+        #menu a:hover::before {
+            content: "*";
+        }
+
+        #menuFormacao {
+            left: 240px;
+            background-image: url("www/formacao.png");
         }
     </style>
     <title>Biografia</title>
@@ -43,19 +52,21 @@
 
 <body>
     <!-- Id's de navegação -->
-    <ul>
-        <li><a class="active" href="#dadospessoais">Dados Pessoais</a></li>
-        <li><a href="#formacao">Formação</a></li>
-        <li><a href="#curriculo">Curriculo</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#hobbies">Hobbies</a></li>
-        <li><a href="#outros">Outros</a></li>
-    </ul>
+    <nav>
+        <ul id="menu">
+            <li><a class="active" href="#dadospessoais">Dados Pessoais</a></li>
+            <li><a id="menuFormacao" href="formacao.html">Formação</a></li>
+            <li><a id="menuCurriculo" href="curriculo.html">Curriculo</a></li>
+            <li><a id="menuProjetos" href="projetos.html">Projetos</a></li>
+            <li><a id="menuHobbies" href="hobbies.html">Hobbies</a></li>
+            <li><a id="menuOutros" href="outros.html">Outros</a></li>
+        </ul>
+    </nav>
 
     <!-- Inicio da página -->
     <div class="about">
         <p>Biografia</p>
-        <img src="eu.jpg" alt="Flowers in Chania" width="300" height="345">
+        <img src="imagens/eu.jpg" alt="Flowers in Chania" width="300" height="345">
     </div>
 
     <!-- Nome -->
@@ -108,246 +119,12 @@
 
     <div class="fim">
         <div class="imagens">
-            <a href="https://www.facebook.com/profile.php?id=100004684563717"><img src="facebook.png"
+            <a href="https://www.facebook.com/profile.php?id=100004684563717"><img src="imagens/facebook.png"
                     alt="Flowers in Chania" width="30" height="30"></a>
-            <a href="https://www.instagram.com/ganduloo/?hl=pt"><img src="instagram.png" alt="Flowers in Chania"
+            <a href="https://www.instagram.com/ganduloo/?hl=pt"><img src="imagens/instagram.png" alt="Flowers in Chania"
                     width="30" height="30"></a>
         </div>
     </div>
-
-    <br><br>
-
-    <!-- Formação -->
-    <div class="bar">
-    </div>
-    <div id="formacao"></div>
-
-    <div class="titulos">
-        <p>Formação</p>
-    </div>
-    <br>
-    <div class="informacao">
-        <table>
-            <tr>
-                <th>Nome da escola</th>
-                <th>Escolaridade adquirida</th>
-                <th>Curso</th>
-            </tr>
-            <tr>
-                <td>Escola Básica Quinta de São João</td>
-                <td>Quarto ano</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Escola Básica Nun' Álvares</td>
-                <td>Sétimo ano</td>
-                <td> </td>
-            </tr>
-            <tr>
-                <td>Escola Secundária José Afonso</td>
-                <td>Décimo Segundo ano</td>
-                <td>Gestão de Sistemas de informaticos</td>
-            </tr>
-        </table>
-        <br>
-
-        <div class=figure>
-            <a href="http://esjoseafonso.com/wp/ "> <img class=scaled src="joseafonso.jpg" alt="St. Tropez">
-                <p>Escola Jose Afonso - Seixal
-                    <p> Carregar na imagem para visitar o site
-        </div>
-
-        <div class=figure>
-            <a href="http://www.aenunalvares.edu.pt/"><img class=scaled src="NunAlvares.jpg" alt="St. Tropez">
-                <p>Escola Nun' Alvares - Arrentela
-                    <p> Carregar na imagem para visitar o site
-        </div>
-
-        <div class=figure>
-            <a href="http://www.cm-seixal.pt/equipamento/escola-basica-da-quinta-de-sao-joao"><img class=scaled
-                    src="saojoao.jpg" alt="St. Tropez">
-                <p>Escola Quinta de São João - Arrentela
-                    <p> Carregar na imagem para visitar o site
-        </div>
-
-    </div>
-
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br><br>
-    <br>
-
-    <div class="botoes">
-        <a href="#"><button type="button">Voltar</button></a>
-    </div>
-
-    <br><br>
-
-    <!-- Curriculo -->
-    <div class="bar">
-    </div>
-    <div id="curriculo"></div>
-
-    <div class="titulos">
-        <p>Curriculo Profissional</p>
-    </div>
-    <br>
-    <div class="informacao">
-        <table>
-            <tr>
-                <th>Experiencia Profissional</th>
-                <th>Localização</th>
-                <th>Funções</th>
-                <th>Descrição das funções</th>
-                <th>Periodo</th>
-            </tr>
-            <tr>
-                <td>Cruz Vermelha</td>
-                <td>Seixal</td>
-                <td>Estágiario</td>
-                <td>Eventos solidarios e trabalho de escritorio</td>
-                <td>2 meses</td>
-            </tr>
-            <tr>
-                <td>Loja de reparações</td>
-                <td>Rio sul Shopping</td>
-                <td>Estágiario</td>
-                <td>Reparações a nivel de Hardware e Software</td>
-                <td>3 meses</td>
-            </tr>
-        </table>
-        <br>
-
-        <div class=figure>
-            <p><img class=scaled src="images.jpg" alt="St. Tropez">
-                <p>Loja da inforgenese - Seixal
-        </div>
-
-        <div class=figure>
-            <p><img class=scaled src="cruzvermelha.jpg" alt="St. Tropez">
-                <p>Edificio da Cruz Vermelha - Seixal
-        </div>
-    </div>
-
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br><br>
-
-    <div class="botoes">
-        <a href="#"><button type="button">Voltar</button></a>
-    </div>
-
-    <br><br>
-
-    <!-- Projetos -->
-    <div class="bar">
-    </div>
-    <div id="projetos"></div>
-
-    <div class="titulos">
-        <p>Projetos</p>
-    </div>
-    <br>
-    <div class="informacao">
-        <p>Projeto:</p>
-        <p>Tema:</p>
-        <p>Linguagens utilizadas:</p>
-        <p>link:</p>
-    </div>
-
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br><br>
-
-
-    <div class="botoes">
-        <a href="#"><button type="button">Voltar</button></a>
-    </div>
-
-    <br><br>
-
-    <!-- Hobbies -->
-    <div class="bar">
-    </div>
-
-    <div id="hobbies"></div>
-
-    <div class="titulos">
-        <p>Hobbies</p>
-    </div>
-    <br>
-    <div class="informacao">
-        <p>Lista de Hobbies:</p>
-
-        <ol>
-            <li>Jogar</li>
-            <br>
-            <li>Dormir</li>
-            <br>
-            <li>Comer</li>
-        </ol>
-    </div>
-
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br>
-
-    <div class="botoes">
-        <a href="#"><button type="button">Voltar</button></a>
-    </div>
-
-    <br><br>
-
-    <!-- Outros -->
-    <div class="bar">
-    </div>
-
-    <div id="outros"></div>
-
-    <div class="titulos">
-        <p>Outros</p>
-    </div>
-    <br>
-    <div class="informacao">
-        <p>Seções importantes:</p>
-    </div>
-
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br>
-
-
-    <div class="botoes">
-        <a href="#"><button type="button">Voltar</button></a>
-    </div>
-    <br><br>
 </body>
 
 </html>
